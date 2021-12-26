@@ -35,12 +35,10 @@ Alternatively, to install them using Visual Studio 2019 Community Edition:
 
 ## Project instructions
 
-## Creating an App Service
+### Creating an App Service
 
-## Cleaning Up Your Services
-Before completing this step, make sure to have taken all necessary screenshots for the project! Check the rubric in the classroom to confirm.
-
-Clean up and remove all services, or else you will incur charges.
+## Clean up resources
+The resources you created in this projecet may incur ongoing costs. To clean up the resources, you need only delete the resource group that contains them:
 
 ```bash
 # replace with your resource group
