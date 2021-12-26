@@ -33,10 +33,10 @@ Alternatively, to install them using Visual Studio 2019 Community Edition:
 1. In the Solution Explorer, expand "Python Environments"
 2. Right click on "Python 3.7 (64-bit) (global default)" and select "Install from requirements.txt"
 
-### To provision the project 
-This section is optional and demonstrates how Azure resources can be created. Ensure that the requirements stated above are created and then:
+## Provision Azure resources
+This section demonstrates how Azure resources can be created. Ensure that the requirements stated above are created and then:
 
-1. Change to the scripts folder:
+1. Change to the [scripts](scripts) folder:
 
 ```bash
 cd scripts
