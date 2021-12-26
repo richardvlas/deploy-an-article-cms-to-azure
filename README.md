@@ -1,10 +1,11 @@
 # Article CMS Web Application deployed to Azure
 
-This project is a Python article CMS web application built using Flask. The user can log in and out and create/edit articles. An article consists of a title, author, and body of text stored in an Azure SQL Server along with an image that is stored in Azure Blob Storage. You will also implement OAuth2 with Sign in with Microsoft using the `msal` library, along with app logging.
+In this project I built a Python article Content Management System (CMS) web application with Flask, a micro web framework written in Python. The user can log in and out and create/edit articles. An article consists of a title, author, and body of text stored in an Azure SQL Server along with an image that is stored in Azure Blob Storage. You will also implement OAuth2 with Sign in with Microsoft using the `msal` library, along with app logging.
 
-## Application Demo:
+## Application Demo
 **TODO**: add a screen video of working application!
 
+## Creating an App Service
 
 
 ## Dependencies
