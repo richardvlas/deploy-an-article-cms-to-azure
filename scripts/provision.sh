@@ -128,7 +128,7 @@ az storage account create \
 echo "Creating a storage container in Azure for images to be stored"
 
 az storage container create \
-    --name $BLOB_ACCOUNT \
+    --account-name $BLOB_ACCOUNT \
     --name $BLOB_CONTAINER \
     --auth-mode login \
     --public-access container
