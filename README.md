@@ -47,6 +47,41 @@ This section demonstrates how Azure resources can be created. Ensure that the re
   ```bash
   source ./provision.sh
   ```
+  
+By running the shell script, a new storage account was created in Azure as well as a new container `images` for images to be stored in that container.
+This was accomplished by runing the following Azure CLI commands:
+
+**Create a Storage Account in Azure**
+```bash
+az storage account create \
+    --name $BLOB_ACCOUNT \
+    --resource-group $RESOURCE_GROUP_NAME \
+    --location $AZURE_LOCATION
+```
+
+**Create a Storage Container in Azure**
+```bash
+az storage container create \
+    --account-name $BLOB_ACCOUNT \
+    --name $BLOB_CONTAINER \
+    --auth-mode login \
+    --public-access container
+```
+
+**Environmental variables**
+
+The environmental variables were set in the shell script as follows:
+
+```bash
+export RESOURCE_GROUP_NAME=cms-resource-group
+export AZURE_LOCATION=westus2
+
+export POSTFIX=$RANDOM
+export BLOB_ACCOUNT=blob$POSTFIX
+export BLOB_CONTAINER=images
+```
+
+For more details please refer to the [provision.sh](provision.sh) script.
 
 ## Populate Azure SQL database
 Once the resources are provisioned, populate the new SQL database with tables (a user table and an article table) by running the scripts provided in the [sql_scripts](sql_scripts) folder in the Query Editor on Azure portal shown below  
