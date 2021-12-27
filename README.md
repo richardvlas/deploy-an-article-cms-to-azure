@@ -42,6 +42,12 @@ This section demonstrates how Azure resources can be created. Ensure that the re
 cd scripts
 ```
 
+2. Run the [provision.sh](provision.sh) script. 
+
+```bash
+source ./provision.sh
+```
+
 ## Project instructions
 
 ### Creating an App Service
