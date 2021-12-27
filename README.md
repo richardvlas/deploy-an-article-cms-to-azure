@@ -122,7 +122,22 @@ Once the resources are provisioned, populate the new SQL database with tables (a
   );
   ```
 
+## Web app login
+
+### Log In Credentials for FlaskWebProject 
+
+- Username: admin
+- Password: pass
+
+### Sign In With Microsoft button functionality
+
+The functionality to sign in the Sign In With Microsoft button is added. This required to add the functionality in the [views.py](FlaskWebProject/views.py) file by using the `msal` library, along with appropriate registration in Azure Active Directory.
+
+
+
 ## Web app deployment to Azure 
+
+**TODO**
 
 
 
