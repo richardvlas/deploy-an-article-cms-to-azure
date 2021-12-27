@@ -131,7 +131,9 @@ Once the resources are provisioned, populate the new SQL database with tables (a
 
 ### Sign In With Microsoft button functionality
 
-The functionality to sign in the Sign In With Microsoft button is added. This required to add the functionality in the [views.py](FlaskWebProject/views.py) file by using the `msal` library, along with appropriate registration in Azure Active Directory.
+The functionality to sign in the Sign In With Microsoft button is added. The button will automatically log into the admin account. This required to add the functionality in the [views.py](FlaskWebProject/views.py) file by using the `msal` library, along with appropriate registration in Azure Active Directory.
+
+
 
 
 
@@ -142,9 +144,6 @@ The functionality to sign in the Sign In With Microsoft button is added. This re
 
 
 
-## Project instructions
-
-### Creating an App Service
 
 ## Clean up resources
 The resources you created in this projecet may incur ongoing costs. To clean up the resources, you need only delete the resource group that contains them:
