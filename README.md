@@ -1,9 +1,21 @@
 # Article CMS Web Application deployed to Azure
 
-In this project I built a Python article Content Management System (CMS) web application with Flask, a micro web framework written in Python. The user can log in and out and create/edit articles. An article consists of a title, author, and body of text stored in an Azure SQL Server along with an image that is stored in Azure Blob Storage. You will also implement OAuth2 with Sign in with Microsoft using the `msal` library, along with app logging.
+In this project I built a Python article Content Management System (CMS) web application with Flask, a micro web framework written in Python. The user can log in and out and create/edit articles. An article consists of a title, author, and body of text stored in an Azure SQL Server along with an image that is stored in Azure Blob Storage. I also implemented OAuth2 with Sign in with Microsoft using the `msal` library, along with app logging.
 
-## Application Demo
-**TODO**: add a screen video of working application!
+## Azure Virtual Machines vs. App Service
+I have choosen App Service as the deployment option in Azure and in this section I describe and compare both options from the costs, scalability, availability, and workflow perspectives.
+
+
+
+||Virtual Machines|App Service|
+|--|----------------|-----------|
+|Costs|fsdsfd|fsdffaaaa|
+|Scalability|fsdsfd|fsdffaaaa|
+|Availability|fsdsfd|fsdffaaaa|
+|Workflow|fsdsfd|fsdffaaaa|
+
+The web app that has been developed so far is a simple CMS system that doesn't require high computing performance and it utilizes only a relational database, a blob storage and consists of a few webpages where no complex calculations are performed as it would be the case in a web app that utilizes a Machine Learning algorithm for training and predictions. Therefore it is sufficient to use App Service as the deployment option.
+
 
 ## Dependencies
 
