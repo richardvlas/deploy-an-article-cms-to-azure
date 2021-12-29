@@ -3,15 +3,15 @@
 In this project I built a Python article Content Management System (CMS) web application with Flask, a micro web framework written in Python. The user can log in and out and create/edit articles. An article consists of a title, author, and body of text stored in an Azure SQL Server along with an image that is stored in Azure Blob Storage. I also implemented OAuth2 with Sign in with Microsoft using the `msal` library, along with app logging.
 
 ## Azure Virtual Machines vs. App Service
-I have choosen App Service as the deployment option in Azure and in this section I describe and compare both options from the costs, scalability, availability, and workflow perspectives.
+I have choosen App Service as the deployment option in Azure and in this section I describe and compare both options from the costs, scalability, access, availability, and workflow perspectives.
 
 ||Virtual Machines|App Service|
 |--|----------------|-----------|
 |Costs|Lower up-front cost compared to purchasing and maintaining on premise hardware but they are more expensive compared to App Service.|You can set the amount of hardware allocated to host your application, and the cost varies based on the plan you choose. There are three different tiers - Dev/Test, Production, and Isolated. Compared to VMs App services a more cost-effective solution.|
-|Scalability|Multiple VMs can be grouped to provide high availability, scalability, and redundancy. There are two options when it comes to scaling — Virtual Machine Scale Sets and Load Balancers.|Vertical or Horizontal scaling. Vertical scaling increases or decreases resources allocated to our App Service, such as the amount of vCPUs or RAM, by changing the App Service pricing tier. Horizontal scaling increases or decreases the number of Virtual Machine instances our App Service is running.|
-|Access|VMs allow full access and control of the VM, that includes control over the underlying operating system and software you install on the VM. Azure supports both Linux and windows VMs.|fsdffaaaa|
+|Scalability|Multiple VMs can be grouped to provide high availability, scalability, and redundancy. There are two options when it comes to scaling — Virtual Machine Scale Sets and Load Balancers.|Vertical or Horizontal scaling. Vertical scaling increases or decreases resources allocated to our App Service, such as the amount of vCPUs or RAM, by changing the App Service pricing tier. Horizontal scaling increases or decreases the number of Virtual Machine instances our App Service is running. On the other hand there are hardware limitations, such as a maximum of 14GB of memory and 4 vCPU cores per instance|
+|Access|VMs allow full access and control of the VM, that includes control over the underlying operating system and software you install on the VM. Azure supports both Linux and windows VMs. VMs allow for the installation of custom images and are an excellent choice for migrating from an on-premises server to the cloud.|Developers have limited access to the host server, so they are unable to control the underlying OS or install software on the server.|
 |Availability|fsdsfd|fsdffaaaa|
-|Workflow|VMs can be more time consuming for the developer to configure and set up than other compute options|fsdffaaaa|
+|Workflow|VMs can be more time consuming for the developer to configure and set up than other compute options|Supports continuous deployment model using GitHub, Azure DevOps, or any Git repo.|
 
 The web app that has been developed in this project is a simple CMS system that doesn't require high computing performance and it only utilizes a relational database, a blob storage and consists of a few webpages where no complex calculations are performed as it would be the case in a web app that utilizes a Machine Learning algorithm for training and predictions. Therefore it is sufficient to use App Service as the deployment option.
 
