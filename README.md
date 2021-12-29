@@ -155,3 +155,11 @@ RESOURCE_GROUP="<YOUR-RESOURCE-GROUP>"
 # run this command
 az group delete --name $RESOURCE_GROUP
 ```
+
+## Troubleshooting
+
+- Mac users may need to install `unixodbc` as well as related drivers as shown below:
+    ```bash
+    brew install unixodbc
+    ```
+- Check [here](https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/install-microsoft-odbc-driver-sql-server-macos?view=sql-server-ver15) to add SQL Server drivers for Mac.
