@@ -42,7 +42,7 @@ This section demonstrates how Azure resources can be created. Ensure that the re
   cd scripts
   ```
 
-2. Run the [provision.sh](provision.sh) script. 
+2. Run the [provision.sh](scripts/provision.sh) script. 
 
   ```bash
   source ./provision.sh
@@ -81,7 +81,7 @@ export BLOB_ACCOUNT=blob$POSTFIX
 export BLOB_CONTAINER=images
 ```
 
-For more details please refer to the [provision.sh](provision.sh) script.
+For more details please refer to the [provision.sh](scripts/provision.sh) script.
 
 ## Populate Azure SQL database
 Once the resources are provisioned, populate the new SQL database with tables (a user table and an article table) by running the scripts provided in the [sql_scripts](sql_scripts) folder in the Query Editor on Azure portal shown below  
@@ -133,16 +133,17 @@ Once the resources are provisioned, populate the new SQL database with tables (a
 
 The functionality to sign in the Sign In With Microsoft button is added. The button will automatically log into the admin account. This required to add the functionality in the [views.py](FlaskWebProject/views.py) file by using the `msal` library, along with appropriate registration in Azure Active Directory.
 
-
-
-
-
 ## Web app deployment to Azure 
 
-**TODO**
+After the Azure resources are provisioned and the SQL database is populated with tables and data, the app implemented in this repository can be deployed to Azure App service. 
 
+Ensure that you are located in `deploy-an-article-cms-to-azure` folder (root folder on this project) and run the [deployment.sh](scripts/deployment.sh) script. 
 
-
+  ```bash
+  source ./deployment.sh
+  ```
+  
+By running the shell script, a new App service is created and deployment of the code in the local folder is performed.
 
 
 ## Clean up resources
