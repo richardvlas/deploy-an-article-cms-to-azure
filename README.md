@@ -5,16 +5,15 @@ In this project I built a Python article Content Management System (CMS) web app
 ## Azure Virtual Machines vs. App Service
 I have choosen App Service as the deployment option in Azure and in this section I describe and compare both options from the costs, scalability, availability, and workflow perspectives.
 
-
-
 ||Virtual Machines|App Service|
 |--|----------------|-----------|
-|Costs|fsdsfd|fsdffaaaa|
-|Scalability|fsdsfd|fsdffaaaa|
+|Costs|Lower up-front cost compared to purchasing and maintaining on premise hardware but they are more expensive compared to App Service.|You can set the amount of hardware allocated to host your application, and the cost varies based on the plan you choose. There are three different tiers - Dev/Test, Production, and Isolated. Compared to VMs App services a more cost-effective solution.|
+|Scalability|Multiple VMs can be grouped to provide high availability, scalability, and redundancy. There are two options when it comes to scaling — Virtual Machine Scale Sets and Load Balancers.|Vertical or Horizontal scaling. Vertical scaling increases or decreases resources allocated to our App Service, such as the amount of vCPUs or RAM, by changing the App Service pricing tier. Horizontal scaling increases or decreases the number of Virtual Machine instances our App Service is running.|
+|Access|VMs allow full access and control of the VM, that includes control over the underlying operating system and software you install on the VM. Azure supports both Linux and windows VMs.|fsdffaaaa|
 |Availability|fsdsfd|fsdffaaaa|
-|Workflow|fsdsfd|fsdffaaaa|
+|Workflow|VMs can be more time consuming for the developer to configure and set up than other compute options|fsdffaaaa|
 
-The web app that has been developed so far is a simple CMS system that doesn't require high computing performance and it utilizes only a relational database, a blob storage and consists of a few webpages where no complex calculations are performed as it would be the case in a web app that utilizes a Machine Learning algorithm for training and predictions. Therefore it is sufficient to use App Service as the deployment option.
+The web app that has been developed in this project is a simple CMS system that doesn't require high computing performance and it only utilizes a relational database, a blob storage and consists of a few webpages where no complex calculations are performed as it would be the case in a web app that utilizes a Machine Learning algorithm for training and predictions. Therefore it is sufficient to use App Service as the deployment option.
 
 
 ## Dependencies
