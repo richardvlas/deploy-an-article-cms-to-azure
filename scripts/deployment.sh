@@ -3,8 +3,6 @@
 
 echo "Provisioning Azure App Service and deploying the flask web app"
 
-cd ..
-
 az webapp up \
     --name webapp$POSTFIX \
     --resource-group $RESOURCE_GROUP_NAME \
