@@ -145,6 +145,20 @@ Ensure that you are located in `deploy-an-article-cms-to-azure` folder (root fol
   
 By running the shell script, a new App service is created and deployment of the code in the local folder is performed.
 
+## example_images Folder
+
+This folder contains sample screenshots that are showing the various tasks throughout the project.
+
+1. [article-cms-solution.png](example_images/article-cms-solution.png) is a screenshot from running the FlaskWebProject on Azure to demonstrate that one is able to create a new entry. The Title, Author, and Body fields are populated to prove that the data is being retrieved from the Azure SQL Database while the image on the right proves that an image was uploaded and pulled from Azure Blob Storage.
+2. [azure-portal-resource-group.png](example_images/azure-portal-resource-group.png) is a screenshot from the Azure Portal showing all of the contents of the Resource Group the are created during provisioning and deployment. The resource group contain the following:
+	- Storage Account
+	- SQL Server
+	- SQL Database
+	- Resources related to deploying the app
+3. [sql-storage-solution.png](example_images/sql-storage-solution.png) is a screenshot showing the created tables and one query of data from (at least) the initial scripts.
+4. [blob-solution.png](example_images/blob-solution.png) is a screenshot showing an example of blob endpoints for where images are sent for storage.
+5. [uri-redirects-solution.png](example_images/uri-redirects-solution.png) is a screenshot of the redirect URIs related to Microsoft authentication.
+6. [log-solution.png](example_images/log-solution.png) is a screenshot showing one potential form of logging with an "Invalid login attempt" and "admin logged in successfully", taken from the app's Log stream. 
 
 ## Clean up resources
 The resources you created in this projecet may incur ongoing costs. To clean up the resources, you need only delete the resource group that contains them:
